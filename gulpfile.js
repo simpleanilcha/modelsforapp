@@ -2,6 +2,9 @@ var gulp = require ('gulp');
 var sass = require ('gulp-sass');
 var uglify = require ('gulp-uglify');
 var browserSync = require ('browser-sync').create();
+var rename = require ('gulp-rename');
+var minifyCss = require ('gulp-minify-css');
+
 
 
 // gulp task for sass
@@ -22,6 +25,31 @@ gulp.task('compress', function(){
 	.pipe(gulp.dest('builds/development/js'));
 });
 
+// Uglify bootstrap js with .min.js rename
+gulp.task('uglifyJs', function(){
+	return gulp.src(['components/libs/bootstrap/dist/js/bootstrap.js', 'components/libs/jquery/dist/jquery.js'])
+	.pipe(rename({
+		suffix: ".min",
+		extname: ".js"
+	}))
+	.pipe(uglify())
+	.pipe(gulp.dest('builds/development/js'))
+});
+
+// Minify css
+gulp.task('minifyCss', function(){
+	return gulp.src(['components/libs/bootstrap/dist/css/bootstrap.css'])
+	.pipe(rename({
+		suffix: ".min",
+		extname: ".css"
+	}))
+	.pipe(minifyCss({compatibility: 'ie8'}))
+	.pipe(gulp.dest('builds/development/css'));
+
+});
+
+// Run 'uglifyJs' and 'minifyCss' task at once
+gulp.task('build', ['uglifyJs', 'minifyCss']);
 
 // Watching files
 gulp.task('watch', function(){
