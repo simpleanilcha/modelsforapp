@@ -1,0 +1,24 @@
+{
+  "name": "modelsforapp",
+  "description": "Models for App, Hottie Hunter",
+  "main": "gulpfile.js",
+  "authors": [
+    "Anil Maharjan"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "modelsforapp"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
