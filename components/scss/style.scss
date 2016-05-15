@@ -2,15 +2,130 @@
 @import "base/base";
 @import "base/mixin";
 @import "base/variables";
-
 // Import layouts
 @import "layout/header";
 @import "layout/footer";
-
 // Import modules
 @import "module/button";
 @import "module/navigation";
-
+@import "module/form";
 // Import Theme
 @import "theme/theme";
+
+body {
+	font-family: $font-roboto;
+	font-size: $default-font-size;
+}
+
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+// html {
+//     -webkit-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//     min-height: 100%;
+// }
+
+// @media only screen and (max-width: 460px) {
+//     html {
+//         background-image: url("../images/bg-xss.jpg");
+//     }
+// }
+
+// @media only screen and (min-width: 461px) {
+//     html {
+//         background-image: url("../images/bg-ss.jpg");
+//     }
+// }
+
+// @media only screen and (min-width: 992px) {
+//     html {
+//         background-image: url("../images/bg-ls.jpg");
+//     }
+// }
+
+
+.enter-screen {
+    background: transparent;
+}
+
+.continue-btn {
+    position: absolute;
+    top: 65%;
+}
+
+.continue-to-details {
+    background-color: $primary-color;
+    color: $white-color;
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 22px;
+    line-height: $line-height;
+    transition: all 0.2s ease;
+    &:hover,
+    &:focus,
+    &:active {
+        opacity: 0.9;
+        color: $white-color;
+    }
+}
+
+#women, #men, #services, #contact {
+	padding:30px 0 60px;
+}
+#women {
+	background-color: #ff0;
+}
+#men {
+	background-color: #f0f;
+}
+#services {
+	background-color: #f00;
+}
+#contact {
+	background-color: #eee;
+}
+
+
+// Model category
+.model-title h3 {
+	padding-bottom:20px;
+}
+.model-desc{
+	border: 1px solid $light-color;
+	margin-bottom: 30px;
+	& p{
+		padding-top:10px;
+		border-top: 1px solid $light-color;
+	}
+	&:hover {
+		box-shadow: 0px 10px 25px $light-color;
+	}
+}
+
+.services h3, .contact h3{
+	text-transform: capitalize;
+}
+
+
 

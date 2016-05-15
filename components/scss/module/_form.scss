@@ -1,0 +1,9 @@
+.mfa-form .form-control {
+	border: 1px solid $white-color;
+	border-radius: 0;
+	box-shadow: none;
+	border-bottom: 1px solid $light-color;
+	&:focus {
+		border-bottom: 1px solid$primary-color;
+	}
+}

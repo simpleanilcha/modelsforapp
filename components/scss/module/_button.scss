@@ -1,0 +1,10 @@
+.btn-brand {
+	background-color: $primary-color;
+	color: $white-color;
+	border-radius: 25px;
+	padding: 10px 30px ;
+	border: 2px solid $white-color;
+	&:hover {
+		opacity: 0.8;
+	}
+}
