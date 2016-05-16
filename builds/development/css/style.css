@@ -22,16 +22,24 @@ h2 {
   padding: 20px; }
 
 .navbar-nav > li > a {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  color: #fff; }
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
-.navbar-default .navbar-nav > li > a {
-  color: #fff;
-  text-transform: uppercase; }
-  .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-nav > li > a {
+  color: #fff !important;
+  text-transform: uppercase;
+  background-color: transparent !important; }
+  .navbar-nav > li > a:hover, .navbar-nav > li > a:focus {
     opacity: 0.8;
     color: #fff; }
+
+.navbar-nav > li .active > a,
+.navbar-nav > .active > a:focus,
+.navbar-nav > .active > a:hover {
+  opacity: 0.8;
+  color: #fff;
+  background-color: transparent !important; }
 
 .navbar-toggle {
   margin-top: 22px;
@@ -58,7 +66,8 @@ footer {
   color: #fff;
   border-radius: 25px;
   padding: 10px 30px;
-  border: 2px solid #fff; }
+  border: 2px;
+  margin: 10px 0; }
   .btn-brand:hover {
     opacity: 0.8; }
 
@@ -69,6 +78,9 @@ footer {
   border-bottom: 1px solid #ddd; }
   .mfa-form .form-control:focus {
     border-bottom: 1px solid #023860; }
+
+.mfa-form .form-group {
+  margin-bottom: 25px; }
 
 body {
   font-family: Roboto;
@@ -112,19 +124,43 @@ body {
     opacity: 0.9;
     color: #fff; }
 
-#women, #men, #services, #contact {
+#men,
+#services,
+#contact {
   padding: 30px 0 60px; }
 
 #women {
-  background-color: #ff0; }
+  padding: 80px 0 60px;
+  z-index: 1; }
 
 #men {
-  background-color: #f0f; }
+  background-color: #eee;
+  z-index: -1; }
 
 #services {
-  background-color: #f00; }
+  z-index: 1; }
 
 #contact {
+  background-color: #eee; }
+
+section {
+  position: relative; }
+
+#women:after, #men:after, #services:after, #contact:after {
+  position: absolute;
+  content: '';
+  bottom: -12px;
+  left: 50%;
+  z-index: 99;
+  width: 24px;
+  height: 24px;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg); }
+
+#women::after, #services::after {
+  background-color: #fff; }
+
+#men::after {
   background-color: #eee; }
 
 .model-title h3 {
@@ -139,5 +175,6 @@ body {
   .model-desc:hover {
     box-shadow: 0px 10px 25px #ddd; }
 
-.services h3, .contact h3 {
+#services h3,
+#contact h3 {
   text-transform: capitalize; }

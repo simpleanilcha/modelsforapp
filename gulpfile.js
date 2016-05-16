@@ -27,7 +27,7 @@ gulp.task('compress', function(){
 
 // Uglify bootstrap js with .min.js rename
 gulp.task('uglifyJs', function(){
-	return gulp.src(['components/libs/bootstrap/dist/js/bootstrap.js', 'components/libs/jquery/dist/jquery.js'])
+	return gulp.src(['components/libs/bootstrap/dist/js/bootstrap.js', 'components/libs/jquery/dist/jquery.js', 'components/libs/wow/dist/wow.js', 'components/libs/smooth-scroll/dist/js/smooth-scroll.js'])
 	.pipe(rename({
 		suffix: ".min",
 		extname: ".js"
@@ -38,7 +38,7 @@ gulp.task('uglifyJs', function(){
 
 // Minify css
 gulp.task('minifyCss', function(){
-	return gulp.src(['components/libs/bootstrap/dist/css/bootstrap.css'])
+	return gulp.src(['components/libs/bootstrap/dist/css/bootstrap.css', 'components/libs/wow/css/libs/animate.css'])
 	.pipe(rename({
 		suffix: ".min",
 		extname: ".css"

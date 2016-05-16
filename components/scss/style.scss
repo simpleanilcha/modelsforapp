@@ -12,27 +12,29 @@
 // Import Theme
 @import "theme/theme";
 
+
 body {
-	font-family: $font-roboto;
-	font-size: $default-font-size;
+    font-family: $font-roboto;
+    font-size: $default-font-size;
 }
 
 #bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
 }
+
 #bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
 }
 
 // html {
@@ -43,26 +45,21 @@ body {
 //     background-repeat: no-repeat;
 //     min-height: 100%;
 // }
-
 // @media only screen and (max-width: 460px) {
 //     html {
 //         background-image: url("../images/bg-xss.jpg");
 //     }
 // }
-
 // @media only screen and (min-width: 461px) {
 //     html {
 //         background-image: url("../images/bg-ss.jpg");
 //     }
 // }
-
 // @media only screen and (min-width: 992px) {
 //     html {
 //         background-image: url("../images/bg-ls.jpg");
 //     }
 // }
-
-
 .enter-screen {
     background: transparent;
 }
@@ -90,42 +87,71 @@ body {
     }
 }
 
-#women, #men, #services, #contact {
-	padding:30px 0 60px;
-}
-#women {
-	background-color: #ff0;
-}
-#men {
-	background-color: #f0f;
-}
-#services {
-	background-color: #f00;
-}
+
+#men,
+#services,
 #contact {
+    padding: 30px 0 60px;
+}
+#women{
+	padding:  80px 0 60px;
+	z-index: 1;
+}
+
+#men {
+    background-color: #eee;
+    z-index: -1;
+}
+
+#services {
+    z-index: 1;
+}
+
+#contact {
+   background-color: #eee;
+
+}
+
+section {
+    position: relative;
+}
+
+#women:after, #men:after, #services:after, #contact:after {
+    position: absolute;
+    content: '';
+    bottom: -12px;
+    left: 50%;
+    z-index: 99;
+    width: 24px;
+    height: 24px;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+transform: translateX(-50%) rotate(45deg);
+}
+#women::after, #services::after {
+	background-color: $white-color;
+}
+#men::after {
 	background-color: #eee;
 }
 
-
 // Model category
 .model-title h3 {
-	padding-bottom:20px;
-}
-.model-desc{
-	border: 1px solid $light-color;
-	margin-bottom: 30px;
-	& p{
-		padding-top:10px;
-		border-top: 1px solid $light-color;
-	}
-	&:hover {
-		box-shadow: 0px 10px 25px $light-color;
-	}
+    padding-bottom: 20px;
 }
 
-.services h3, .contact h3{
-	text-transform: capitalize;
+.model-desc {
+    border: 1px solid $light-color;
+    margin-bottom: 30px;
+    & p {
+        padding-top: 10px;
+        border-top: 1px solid $light-color;
+    }
+    &:hover {
+        box-shadow: 0px 10px 25px $light-color;
+    }
 }
 
-
-
+#services h3,
+#contact h3 {
+    text-transform: capitalize;
+}

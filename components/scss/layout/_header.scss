@@ -15,20 +15,35 @@
     padding: 20px;
 }
 
+
 .navbar-nav > li > a {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: $white-color;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
 }
 
-.navbar-default .navbar-nav > li > a{
-    color: $white-color;
+ .navbar-nav > li > a{
+    color: $white-color !important;
     text-transform: uppercase;
+    background-color: transparent !important;
     &:hover, &:focus {
         opacity: 0.8;
         color: $white-color;
     }
+
 }
+
+.navbar-nav > li .active > a,
+.navbar-nav > .active > a:focus,
+.navbar-nav > .active > a:hover 
+{
+    opacity: 0.8;
+    color: $white-color;
+    background-color: transparent !important;
+  }
+
+
 
 .navbar-toggle {
 	margin-top: 22px;
