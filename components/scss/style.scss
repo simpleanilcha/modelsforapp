@@ -14,7 +14,7 @@
 
 
 body {
-    font-family: $font-roboto;
+    font-family: $font-primary;
     font-size: $default-font-size;
 }
 
@@ -95,16 +95,16 @@ body {
 }
 #women{
 	padding:  80px 0 60px;
-	z-index: 1;
+	z-index: 2;
 }
 
 #men {
     background-color: #eee;
-    z-index: -1;
+    z-index: 1;
 }
 
 #services {
-    z-index: 1;
+    z-index: 2;
 }
 
 #contact {
@@ -151,7 +151,31 @@ transform: translateX(-50%) rotate(45deg);
     }
 }
 
+
+
+#services h2,
+#contact h2{
+    margin-bottom: 30px;
+
+}
 #services h3,
 #contact h3 {
     text-transform: capitalize;
+    margin: 10px 0 20px ;
+}
+
+.services {
+    margin-bottom: 30px;
+}
+
+.service-img svg{
+    border-radius: 100px;
+    max-height: 160px;
+    border: 1px solid $light-color;
+    padding: 20px;
+}
+
+
+.contact-center {
+    margin-bottom: 40px;
 }
