@@ -24,9 +24,7 @@ h2 {
 .navbar-nav > li > a {
   margin-top: 20px;
   padding-top: 10px;
-  padding-bottom: 10px; }
-
-.navbar-nav > li > a {
+  padding-bottom: 10px;
   color: #fff !important;
   text-transform: uppercase;
   background-color: transparent !important; }
@@ -34,7 +32,9 @@ h2 {
     opacity: 0.8;
     color: #fff; }
 
-.navbar-nav li .active, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+.navbar-nav > .active a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
   opacity: 0.8;
   color: #fff;
   background-color: transparent !important; }
@@ -144,7 +144,10 @@ body {
 section {
   position: relative; }
 
-#women:after, #men:after, #services:after, #contact:after {
+#women:after,
+#men:after,
+#services:after,
+#contact:after {
   position: absolute;
   content: '';
   bottom: -12px;
@@ -155,7 +158,8 @@ section {
   -webkit-transform: translateX(-50%) rotate(45deg);
   transform: translateX(-50%) rotate(45deg); }
 
-#women::after, #services::after {
+#women::after,
+#services::after {
   background-color: #fff; }
 
 #men::after {
@@ -185,11 +189,20 @@ section {
 .services {
   margin-bottom: 30px; }
 
+.service-img {
+  display: block; }
+
+.service-img-svg {
+  display: inline-block; }
+
 .service-img svg {
   border-radius: 100px;
-  max-height: 160px;
+  height: 160px;
   border: 1px solid #ddd;
-  padding: 20px; }
+  padding: 20px;
+  display: block;
+  text-align: center;
+  width: auto; }
 
 .contact-center {
   margin-bottom: 40px; }

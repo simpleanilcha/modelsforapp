@@ -11,8 +11,6 @@
 @import "module/form";
 // Import Theme
 @import "theme/theme";
-
-
 body {
     font-family: $font-primary;
     font-size: $default-font-size;
@@ -87,15 +85,15 @@ body {
     }
 }
 
-
 #men,
 #services,
 #contact {
     padding: 30px 0 60px;
 }
-#women{
-	padding:  80px 0 60px;
-	z-index: 2;
+
+#women {
+    padding: 80px 0 60px;
+    z-index: 2;
 }
 
 #men {
@@ -108,15 +106,17 @@ body {
 }
 
 #contact {
-   background-color: #eee;
-
+    background-color: #eee;
 }
 
 section {
     position: relative;
 }
 
-#women:after, #men:after, #services:after, #contact:after {
+#women:after,
+#men:after,
+#services:after,
+#contact:after {
     position: absolute;
     content: '';
     bottom: -12px;
@@ -125,13 +125,16 @@ section {
     width: 24px;
     height: 24px;
     -webkit-transform: translateX(-50%) rotate(45deg);
-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
 }
-#women::after, #services::after {
-	background-color: $white-color;
+
+#women::after,
+#services::after {
+    background-color: $white-color;
 }
+
 #men::after {
-	background-color: #eee;
+    background-color: #eee;
 }
 
 // Model category
@@ -151,30 +154,38 @@ transform: translateX(-50%) rotate(45deg);
     }
 }
 
-
-
 #services h2,
-#contact h2{
+#contact h2 {
     margin-bottom: 30px;
-
 }
+
 #services h3,
 #contact h3 {
     text-transform: capitalize;
-    margin: 10px 0 20px ;
+    margin: 10px 0 20px;
 }
 
 .services {
     margin-bottom: 30px;
 }
 
-.service-img svg{
-    border-radius: 100px;
-    max-height: 160px;
-    border: 1px solid $light-color;
-    padding: 20px;
+.service-img {
+    display: block;
 }
 
+.service-img-svg {
+    display: inline-block;
+}
+
+.service-img svg {
+    border-radius: 100px;
+    height: 160px;
+    border: 1px solid $light-color;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    width: auto;
+}
 
 .contact-center {
     margin-bottom: 40px;

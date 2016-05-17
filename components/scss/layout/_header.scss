@@ -15,23 +15,18 @@
     padding: 20px;
 }
 
-
 .navbar-nav > li > a {
     margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-
-}
-
- .navbar-nav > li > a{
     color: $white-color !important;
     text-transform: uppercase;
     background-color: transparent !important;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         opacity: 0.8;
         color: $white-color;
     }
-
 }
 
 // .navbar-nav > li .active > a,
@@ -42,26 +37,26 @@
 //     color: $white-color;
 //     background-color: transparent !important;
 //   }
-
- .navbar-nav li .active, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-   opacity: 0.8;
+.navbar-nav > .active a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    opacity: 0.8;
     color: $white-color;
     background-color: transparent !important;
 }
 
-
-
 .navbar-toggle {
-	margin-top: 22px;
-	padding: 9px 10px 3px;
-	border-radius: 0;
-	&:hover, &:focus {
-		opacity: 0.8;
-	}
+    margin-top: 22px;
+    padding: 9px 10px 3px;
+    border-radius: 0;
+    &:hover,
+    &:focus {
+        opacity: 0.8;
+    }
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: $white-color;
+    background-color: $white-color;
 }
 
 .navbar-toggle .icon-bar {
