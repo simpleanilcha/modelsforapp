@@ -1,27 +1,35 @@
+/* line 3, D:/wamp/www/modelsforapp/modelsforapp/components/scss/base/_base.scss */
 a {
   text-decoration: none !important; }
+  /* line 5, D:/wamp/www/modelsforapp/modelsforapp/components/scss/base/_base.scss */
   a:hover {
     text-decoration: none !important; }
 
+/* line 10, D:/wamp/www/modelsforapp/modelsforapp/components/scss/base/_base.scss */
 h2 {
   text-transform: uppercase;
   font-weight: 700; }
 
+/* line 1, D:/wamp/www/modelsforapp/modelsforapp/components/scss/layout/_header.scss */
 .navbar-default {
   background-color: #023860;
   border-width: 0 0 1px 0;
   border-radius: 0; }
 
+/* line 7, D:/wamp/www/modelsforapp/modelsforapp/components/scss/layout/_header.scss */
 .navbar {
   min-height: 80px;
   color: #fff;
   margin-bottom: 0; }
 
+/* line 13, D:/wamp/www/modelsforapp/modelsforapp/components/scss/layout/_header.scss */
 .navbar-brand {
   height: 80px;
   padding: 20px; }
 
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-text {
+/* line 18, D:/wamp/www/modelsforapp/modelsforapp/components/scss/layout/_header.scss */
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-text {
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -29,34 +37,45 @@ h2 {
   text-transform: uppercase;
   background-color: transparent !important; }
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-  color: yellow;
-  background-color: #f00; }
-
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-  color: #f0f;
+/* line 28, D:/wamp/www/modelsforapp/modelsforapp/components/scss/layout/_header.scss */
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: rgba(255, 255, 255, 0.8);
   background-color: transparent; }
 
+/* line 34, D:/wamp/www/modelsforapp/modelsforapp/components/scss/layout/_header.scss */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: transparent; }
+
+/* line 42, D:/wamp/www/modelsforapp/modelsforapp/components/scss/layout/_header.scss */
 .navbar-toggle {
   margin-top: 22px;
   padding: 9px 10px 3px;
   border-radius: 0; }
+  /* line 46, D:/wamp/www/modelsforapp/modelsforapp/components/scss/layout/_header.scss */
   .navbar-toggle:hover, .navbar-toggle:focus {
     opacity: 0.8; }
 
+/* line 52, D:/wamp/www/modelsforapp/modelsforapp/components/scss/layout/_header.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #fff; }
 
+/* line 56, D:/wamp/www/modelsforapp/modelsforapp/components/scss/layout/_header.scss */
 .navbar-toggle .icon-bar {
   width: 30px;
   margin-bottom: 8px;
   height: 1px; }
 
+/* line 1, D:/wamp/www/modelsforapp/modelsforapp/components/scss/layout/_footer.scss */
 footer {
   background-color: #ddd;
   padding: 25px 0 10px;
   border-top: 1px solid #ddd; }
 
+/* line 1, D:/wamp/www/modelsforapp/modelsforapp/components/scss/module/_button.scss */
 .btn-brand {
   background-color: #023860;
   color: #fff;
@@ -64,24 +83,30 @@ footer {
   padding: 10px 30px;
   border: 2px;
   margin: 10px 0; }
+  /* line 8, D:/wamp/www/modelsforapp/modelsforapp/components/scss/module/_button.scss */
   .btn-brand:hover {
     opacity: 0.8; }
 
+/* line 1, D:/wamp/www/modelsforapp/modelsforapp/components/scss/module/_form.scss */
 .mfa-form .form-control {
   border: 1px solid #fff;
   border-radius: 0;
   box-shadow: none;
   border-bottom: 1px solid #ddd; }
+  /* line 6, D:/wamp/www/modelsforapp/modelsforapp/components/scss/module/_form.scss */
   .mfa-form .form-control:focus {
     border-bottom: 1px solid #023860; }
 
+/* line 11, D:/wamp/www/modelsforapp/modelsforapp/components/scss/module/_form.scss */
 .mfa-form .form-group {
   margin-bottom: 25px; }
 
+/* line 14, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 body {
   font-family: "Lato", sans-serif;
   font-size: 16px; }
 
+/* line 19, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 #bg {
   position: fixed;
   top: -50%;
@@ -89,6 +114,7 @@ body {
   width: 200%;
   height: 200%; }
 
+/* line 27, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 #bg img {
   position: absolute;
   top: 0;
@@ -99,13 +125,16 @@ body {
   min-width: 50%;
   min-height: 50%; }
 
+/* line 61, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 .enter-screen {
   background: transparent; }
 
+/* line 65, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 .continue-btn {
   position: absolute;
   top: 65%; }
 
+/* line 70, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 .continue-to-details {
   background-color: #023860;
   color: #fff;
@@ -116,32 +145,40 @@ body {
   font-size: 22px;
   line-height: 1.5;
   transition: all 0.2s ease; }
+  /* line 80, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
   .continue-to-details:hover, .continue-to-details:focus, .continue-to-details:active {
     opacity: 0.9;
     color: #fff; }
 
+/* line 88, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 #men,
 #services,
 #contact {
   padding: 30px 0 60px; }
 
+/* line 94, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 #women {
   padding: 80px 0 60px;
   z-index: 2; }
 
+/* line 99, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 #men {
   background-color: #eee;
   z-index: 1; }
 
+/* line 104, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 #services {
   z-index: 2; }
 
+/* line 108, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 #contact {
   background-color: #eee; }
 
+/* line 112, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 section {
   position: relative; }
 
+/* line 116, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 #women:after,
 #men:after,
 #services:after,
@@ -156,44 +193,56 @@ section {
   -webkit-transform: translateX(-50%) rotate(45deg);
   transform: translateX(-50%) rotate(45deg); }
 
+/* line 131, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 #women::after,
 #services::after {
   background-color: #fff; }
 
+/* line 136, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 #men::after {
   background-color: #eee; }
 
+/* line 142, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 .model-title h3 {
   padding-bottom: 20px; }
 
+/* line 146, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 .model-desc {
   border: 1px solid #ddd;
   margin-bottom: 30px;
   background-color: #fff; }
+  /* line 150, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
   .model-desc p {
     padding-top: 10px;
     border-top: 1px solid #ddd; }
+  /* line 154, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
   .model-desc:hover {
     box-shadow: 0px 10px 25px #ddd; }
 
+/* line 159, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 #services h2,
 #contact h2 {
   margin-bottom: 30px; }
 
+/* line 164, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 #services h3,
 #contact h3 {
   text-transform: capitalize;
   margin: 10px 0 20px; }
 
+/* line 170, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 .services {
   margin-bottom: 30px; }
 
+/* line 174, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 .service-img {
   display: block; }
 
+/* line 178, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 .service-img-svg {
   display: inline-block; }
 
+/* line 182, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 .service-img svg {
   border-radius: 100px;
   height: 160px;
@@ -203,5 +252,8 @@ section {
   text-align: center;
   width: auto; }
 
+/* line 192, D:/wamp/www/modelsforapp/modelsforapp/components/scss/style.scss */
 .contact-center {
   margin-bottom: 40px; }
+
+/*# sourceMappingURL=../../sass */

@@ -1,14 +1,14 @@
 $(function() {
+// offset
+    smoothScroll.init({
+        speed: 1000,
+        easing: 'easeInOutCubic',
+        offset: 79,
+        updateURL: false,
+        callbackBefore: function(toggle, anchor) {},
+        callbackAfter: function(toggle, anchor) {}
+    });
 
-
-
-	// add active class on click
-	$('.navbar-nav li').each(function(){
-		$('.navbar-nav li a').on('click', function(){
-			$('.navbar-nav li').removeClass('active');
-			$(this).parent().addClass('active');
-		});
-	});
 
 	// Hide nav on click on mobile
 	$('.navbar-nav li a').click(function(){
@@ -18,8 +18,10 @@ $(function() {
 
 $(document).ready(function () {
 
+// wowjs initialize
 new WOW().init();
 
+// scroll
 	$(document).on("scroll", onScroll);
 
 	// add active class on scroll

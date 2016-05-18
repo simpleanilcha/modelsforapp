@@ -10,7 +10,12 @@ var minifyCss = require ('gulp-minify-css');
 // gulp task for sass
 gulp.task('sass', function(){
 	gulp.src('components/scss/**/*.scss')
-	.pipe(sass().on('error', sass.logError))
+	.pipe(sass({
+		sourceComments: 'map',
+  		sourceMap: 'sass',
+  		outputStyle: 'nested'
+	})
+	.on('error', sass.logError))
 	.pipe(gulp.dest('builds/development/css'))
 
 	// browserSync will watch changes and reload on save
