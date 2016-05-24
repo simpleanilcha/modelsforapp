@@ -1,7 +1,7 @@
 <?php 
 
 if(isset($_POST['submit'])){
-$to = "stephanie@modelsforapp.com";
+$to = ["stephanie@modelsforapp.com","tommyod46@hotmail.com"];
 $from = $_POST['modelEmail'];			
 $subject = "Email from Models for App";
 $message = "<strong>".$_POST['modelName']."</strong> has send you the information.<br/><br/>"."Name: ".$_POST['modelName']."<br/>Email: ".$from."<br/>Relevant Social Media Accounts: ".$_POST['modelSocial']."<br/>Number of followers: ".$_POST['modelFollowers'];
